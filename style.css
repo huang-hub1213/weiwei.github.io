@@ -1,0 +1,37 @@
+.btn {
+    position: relative;
+    min-width: 200px;
+    background: #FFFFFF;
+    border: 2px solid #3AD2D0;
+    transform: translate3d(0px, 0%, 0px);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 0.6s;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.btn{
+  transition: color .8s .2s;
+}
+
+.btn:hover{
+  color: #fff;
+}
+
+.btn::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 95%;
+  width: 100%;
+  background-color: #008891;
+  transition: 1s;
+  z-index: -1;
+}
+
+.btn:hover:before{
+  top: 0;
+}
